@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#101016">
+  <title>Afterglow Cover Lab</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="#">AFTERGLOW <span>COVER LAB</span></a><span class="offline">● LOCAL EDITOR</span></header>
+  <main class="workspace">
+    <section class="inspector" aria-label="Cover controls">
+      <p class="eyebrow">PHOTO POSTER STUDIO · ISSUE 06</p>
+      <h1>Make a scene.</h1>
+      <p class="intro">Turn your photos into a little piece of the night.</p>
+      <label class="upload">＋ Add your photos<input id="photo" type="file" accept="image/*" multiple></label>
+      <div class="field"><label for="layout">Composition</label><select id="layout"></select></div>
+      <div class="field"><label for="grade">Color story</label><select id="grade"></select></div>
+      <div class="field"><label for="caption">Main title</label><input id="caption" maxlength="36" value="AFTER HOURS"></div>
+      <div class="field"><label for="subtitle">Neon note</label><input id="subtitle" maxlength="42" value="a city that never sleeps"></div>
+      <div class="field"><label for="activePanel">Tune panel</label><select id="activePanel"></select></div>
+      <div class="field"><label for="zoom">Crop zoom <output id="zoomValue">1.0×</output></label><input id="zoom" type="range" min="1" max="2.4" step="0.05" value="1"></div>
+      <div class="field"><label for="horizontal">Horizontal crop <output id="horizontalValue">50%</output></label><input id="horizontal" type="range" min="0" max="100" value="50"></div>
+      <div class="field"><label for="vertical">Vertical crop <output id="verticalValue">50%</output></label><input id="vertical" type="range" min="0" max="100" value="50"></div>
+      <label class="toggle"><input id="texture" type="checkbox" checked> Film grain + edge vignette</label>
+      <button id="export" class="export">Export all sizes <span>↗</span></button>
+      <p id="status" role="status">Choose a photo or start with the included scenes.</p>
+      <p class="privacy">Your photos stay in this browser. Nothing is uploaded.</p>
+    </section>
+    <section class="preview-area"><div class="preview-head"><div><span class="eyebrow">LIVE CANVAS</span><h2 id="layoutName">Four corners</h2></div><span class="canvas-size">1080 × 1080</span></div>
+      <div class="canvas-frame"><canvas id="cover" width="1080" height="1080" aria-label="Live poster preview"></canvas></div>
+      <div id="size-board" aria-label="All three export sizes"></div>
+      <div class="filmstrip"><button data-sample="boulevard" class="sample active"><img src="./samples/boulevard.jpg" alt="Coastal boulevard at dusk"><span>COAST DRIVE</span></button><button data-sample="pier" class="sample"><img src="./samples/pier.jpg" alt="Pier lights at night"><span>THE PIER</span></button><div class="tip"><span>✳</span> Select a panel, then tune its crop.</div></div>
+    </section>
+  </main>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>

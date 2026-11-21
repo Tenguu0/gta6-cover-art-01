@@ -1,0 +1,6 @@
+[
+  {"name":"1-cover.jpg","query":"?shot=cover&layout=hero&grade=sunset&photo=pier&caption=AFTER%20HOURS&subtitle=the%20city%20is%20ours","w":1920,"h":1080},
+  {"name":"2-editor.jpg","query":"?shot=editor&layout=nine&grade=neon&photo=boulevard&caption=COAST%20DRIVE","w":1440,"h":1000},
+  {"name":"3-cover-portrait.jpg","query":"?shot=cover&format=portrait&layout=story&grade=duo&photo=boulevard&caption=LAST%20LIGHT","w":1080,"h":1350},
+  {"name":"4-sizes.jpg","query":"?shot=sizes&layout=four&grade=sunset&photo=pier&caption=AFTER%20HOURS","w":1600,"h":1000}
+]
