@@ -32,7 +32,7 @@ function drawTitle(ctx,w,h,caption,subtitle,layoutKey) {
   const band=layoutKey==='bleed'||layoutKey==='tilt'?h*.28:h*.24, y=h-band;
   const fade=ctx.createLinearGradient(0,y-band*.25,0,h);fade.addColorStop(0,'rgba(15,12,25,0)');fade.addColorStop(.28,'rgba(15,12,25,.66)');fade.addColorStop(1,'rgba(15,12,25,.94)');ctx.fillStyle=fade;ctx.fillRect(0,y-band*.3,w,band*1.3);
   ctx.textAlign='center';ctx.textBaseline='alphabetic';let size=band*.48;const title=caption.trim().toUpperCase();
-  ctx.font=`${size}px AfterDisplay, Impact, sans-serif`;while(ctx.measureText(title).width>w*.88&&size>18){size-=2;ctx.font=`${size}px AfterDisplay, Impact, sans-serif`;}
+  ctx.font=`${size}px Anton, Impact, sans-serif`;while(ctx.measureText(title).width>w*.88&&size>18){size-=2;ctx.font=`${size}px Anton, Impact, sans-serif`;}
   ctx.lineWidth=Math.max(2,size*.018);ctx.strokeStyle='rgba(32,13,43,.7)';ctx.strokeText(title,w/2,y+band*.67);ctx.fillStyle='#fff5e9';ctx.shadowColor='#ff6397';ctx.shadowBlur=size*.22;ctx.fillText(title,w/2,y+band*.67);ctx.shadowBlur=0;
   ctx.font=`italic ${Math.max(17,band*.16)}px Georgia, serif`;ctx.fillStyle='#ff9ac7';ctx.shadowColor='#ff38b2';ctx.shadowBlur=16;ctx.fillText(subtitle.trim(),w/2,y+band*.88);ctx.shadowBlur=0;
   ctx.font='700 12px Arial,sans-serif';ctx.fillStyle='rgba(255,255,255,.7)';ctx.fillText('AFTERGLOW  /  CITY STORIES  /  06',w/2,y+band*.18);

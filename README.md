@@ -4,7 +4,7 @@ Build a cinematic, multi-panel photo cover in your browser. Choose a layout and 
 
 ## Covers, composed by you
 
-Afterglow Cover Lab turns local photographs into original poster art with six panel arrangements, five treatments, repeatable grain, vignette, and editable display type. Start with the included sample photographs or add your own. No game artwork, marks, characters, or game fonts are used.
+Afterglow Cover Lab turns local photographs into original poster art with six panel arrangements, five treatments, repeatable grain, vignette, and editable display type. Start with the included sample photographs or add your own. Anton (SIL OFL) is vendored for display lettering. No game artwork, marks, characters, or game fonts are used.
 
 ## Run
 
